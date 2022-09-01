@@ -13,18 +13,19 @@ public class BubbleSorting {
 
         long before1 = System.currentTimeMillis();
         int[] numbers1 = Arrays.stream(numbers).sorted().toArray();
-        System.out.println(Arrays.toString(numbers1));
+        System.out.println("\n" + Arrays.toString(numbers1));
         long after1 = System.currentTimeMillis();
         System.out.println(after1 - before1 + " милисекунд");
-
-
         long before = System.currentTimeMillis();
         System.out.println(before);
+
+        System.out.println("\n" + "==============================" + "\n");
+
         sorting(numbers);
         long after = System.currentTimeMillis();
+        System.out.println(Arrays.toString(numbers));
         System.out.println(after);
         System.out.println(after - before + " милисекунд");
-        System.out.println(Arrays.toString(numbers));
 
     }
 
